@@ -2,7 +2,7 @@
 Download results of all "google image search"'s images.  
 This program not use google api, so can download images more than 100!
 
-Japanese README↓  
+日本語README↓  
 https://github.com/minfaox3/GoogleImageCrawler/edit/master/README_ja.md
 
 ## Attention
@@ -43,7 +43,7 @@ Use in accordance with the laws of your country.
 | -o, --output-directory | Sets output directory. | String | images |
 | -dh, --do-html | This option will output result of img tags as "[SENTENCE].html".But images will not output. You can use only "True" or "False".| String | false |
 | -ss, --scroll-speed | Sets scroll px per delay. | Unsigned Integer | 2000 |
-| -gl, --geolocation | Sets geolocation code. Default is blank because Google guess it from ip or get from your account settings. It can affect search results. It will affect search results. | String | blank |
+| -gl, --geolocation | Sets geolocation code. Default is blank because Google guess it from ip or get from your account settings. It can affect search results. | String | blank |
 | -it, --image-type | Sets image type. Valid types are "clipart", "face", "lineart", "stock", "photo", "animated". | String | blank |
 | -sp, --safe-parameter | Sets safe parameter. Valid parameters are "off", "medium", "high". | String | off |
 
