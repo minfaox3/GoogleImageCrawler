@@ -21,7 +21,7 @@ def main():
     parser.add_argument('-d', '--delay', default='1', type=int, help='Sets delay for scrolling. Default is "1" '
                                                                      'second.\nBe careful to "0" will put maximum '
                                                                      'burden on the server.')
-    parser.add_argument('-o', '--directory', default='images', type=str, help='Sets output directory. Default is '
+    parser.add_argument('-o', '--output-directory', default='images', type=str, help='Sets output directory. Default is '
                                                                               '"images".')
     parser.add_argument('-dh', '--do-html', default='false', type=str, help='This option will print result of img tags '
                                                                             'like html.\nIf you set true then images '
@@ -47,7 +47,7 @@ def main():
     argv = parser.parse_args()
     delay = argv.delay
     html = argv.do_html
-    directory = argv.directory
+    directory = argv.output_directory
     scroll_speed = argv.scroll_speed
     gl = argv.geolocation
     it = argv.image_type
