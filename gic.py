@@ -81,7 +81,7 @@ def main():
         pi = progress_icon.get()
         progress_icon.put(pi)
         print('\r' + pi + ' ' + str(
-            len(driver.find_elements_by_xpath('//img[@alt="「' + query + '」の画像検索結果"]'))) + ' images found', end='')
+            len(driver.find_elements_by_xpath('//img[@class="rg_i Q4LuWd"]'))) + ' images found', end='')
         time.sleep(delay)
         element = driver.find_element_by_xpath('//input[@value="結果をもっと表示"]')
         if element.is_displayed():
@@ -93,7 +93,7 @@ def main():
         scroll_speed += 2000
     soup = bs4.BeautifulSoup(driver.page_source, 'html.parser')
     driver.quit()
-    images = soup.select('img[alt="「' + query + '」の画像検索結果"]')
+    images = soup.select('img[class="rg_i Q4LuWd"]')
     print('\rCompleted crawl\nResult:' + str(len(images)) + ' images found')
     if html != 'true' and html != "True":
         print('Starting download images')
